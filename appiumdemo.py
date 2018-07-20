@@ -1,5 +1,7 @@
-from appium import webdriver
+#from appium import webdriver
+from selenium import webdriver
 import time
+
 desire_caps = {'platformName':'Android',
                'deviceName':'MAX',
                'automationName':'Appium',

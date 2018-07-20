@@ -1,6 +1,6 @@
 import sys
 
-import math
+import math, set
 
 a = sys.argv[1:]
 print(f"输入字符个数为{a.__len__()}")

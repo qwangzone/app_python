@@ -1,4 +1,4 @@
-import itchat
+import itchat 
 """给文件助手发信息"""
 def send_wenbenzhushou():
     itchat.auto_login()

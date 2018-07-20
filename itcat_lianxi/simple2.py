@@ -1,5 +1,6 @@
 import itchat,time
 from itchat.content import *
+import set
 @itchat.msg_register([TEXT, MAP, CARD, NOTE, SHARING])
 def text_reply(msg):
     msg.user.send('%s:%s'%(msg.type,msg.text))

@@ -5,10 +5,11 @@ class GouZao:
         self.d = 1
         self.b = a
 
-    def wq1(self):
-        print("GouZao wq1")
+    def wq12(self):
+        print("GouZao wq12")
 
     def wq2(self):
+        print(self.ip)
         print("wq2")
 
 class Wg(GouZao):
@@ -24,8 +25,9 @@ class Wg(GouZao):
         print("Wg wq1")
 
     def test(self):
+        self.wq12()
         self.wq1()
-        super().wq1()
+        #super().wq1()
 
 
 if __name__ == '__main__':
