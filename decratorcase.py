@@ -1,5 +1,5 @@
 from datetime import datetime
-import time
+import time,sys,os
 
 
 def log(func):
@@ -20,8 +20,20 @@ def runtime(func):
     return wrapper
 
 @runtime
+@log
 def now(x,y):
-  time.sleep(3)
+  #time.sleep()
   return x+y
-
+print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+print(datetime.now())
 print(now(3,4))
+
+import os
+a = "."
+print(os.path.isdir(a))
+print(os.listdir(a))
+for i in os.listdir(a):
+    if os.path.isdir(i):
+        print(i+ "是个目录")
+    else:
+        print(i+ "是个文件")
