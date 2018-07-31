@@ -17,14 +17,14 @@ def add():
 @runtime
 def wtest1():
     k =1
-    while k<add():
+    while k<add():# 每次循环都会调用add函数，调用sum次add函数，sum越大，调用的次数越多
         k = k+1
     print(k)
 
 @runtime
 def wtest2():
     k =1
-    num = add()
+    num = add()  #调用一次add()函数
     while k<num:
         k = k+1
     print(k)
