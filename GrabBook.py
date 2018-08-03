@@ -17,7 +17,8 @@ with open("test.txt",'a+') as f:
         f.write(content1)
         f.write(content2)
 
-
+# a = "Wqwqwqwq sasa "
+# print(a.count("sa"))
 # dr.get("http://www.xinshubao.net/14/14506/1319763.html")
 # #a=dr.find_element_by_id("content").get_attribute("innerHTML")
 # a=dr.find_element_by_id("content").text
