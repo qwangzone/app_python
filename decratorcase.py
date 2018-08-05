@@ -3,10 +3,10 @@ import time,sys,os
 
 
 def log(func):
-    def wrapper(*args,**kwargs):
+    def wrapp(*args,**kwargs):
         print("call %s():" %func.__name__)
         return func(*args,**kwargs)
-    return wrapper
+    return wrapp
 
 def runtime(func):
     def wrapper(*args,**kwargs):
@@ -19,17 +19,16 @@ def runtime(func):
     #print(start_time)
     return wrapper
 
-@runtime
 @log
 def now(x,y):
-  #time.sleep()
+  time.sleep(3)
   return x+y
 print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 print(datetime.now())
 print(now(3,4))
 
-import os,sys
-a = "/app_python"
+import os
+a = "."
 print(os.path.isdir(a))
 print(os.listdir(a))
 for i in os.listdir(a):
