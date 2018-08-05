@@ -28,8 +28,8 @@ print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 print(datetime.now())
 print(now(3,4))
 
-import os
-a = "."
+import os,sys
+a = "/app_python"
 print(os.path.isdir(a))
 print(os.listdir(a))
 for i in os.listdir(a):
