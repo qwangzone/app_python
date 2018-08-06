@@ -8,6 +8,7 @@ section_name = []
 #print(eles[0].find_element_by_tag_name("a").get_attribute("href"))
 for i in eles:
     section_name.append(i.find_element_by_tag_name("a").get_attribute("href"))
+print(section_name[0])
 with open("test.txt",'a+') as f:
     for i in section_name:
         dr.get(i)
